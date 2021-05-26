@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Realtime chat Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="chat grid">
+        <div class="heading_container">
+            <h3 class="heading">Realtime chat Application</h3>
+        </div>
+        <div class="chat__wrapper">
+            <div class="uname">
+            <div class="text">Anonymous</div>
+            <div class="form1">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Enter Username">
+                    <div class="input-group-append">
+                        <button class="btn btn-warning" type="button" id="usernameBtn">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            <div class="chat__wrapper overflow" id="scroller">
+                <ul class="list-group list-group-flush" id="message-list"></ul>
+                <div class="info type" id="scroller"></div>
+            </div>
+            <div class="chat__form">
+                <form class="chat__form" onSubmit="return false;">
+                    <input type="text" class="form-control" id="message" id="text-message" placeholder="Enter message">
+                        <button type="button" id="messageBtn">Send</button>
+                </form>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rexeze/formatTimeStamp/src/index-cdn.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
