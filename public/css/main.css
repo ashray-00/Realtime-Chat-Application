@@ -130,7 +130,7 @@ button:hover {
 }
 
 .heading_container {
-    background-color: rgb(53, 83, 14);
+    background-color:  #e6d0d4;
     display: flex;
     width: 100%;
     padding: 1rem;
@@ -141,10 +141,10 @@ button:hover {
 .heading {
     font-size: 3vw;
     /* text-shadow: 4px 4px 0px #fff; */
-    color: #fff;
+    color: rgb(7, 4, 4);
     ;
-    mix-blend-mode: screen;
-    /* animation: fadeIn 2.5s linear forwards; */
+    /* mix-blend-mode: screen; */
+    animation: fadeIn 2.5s linear forwards;
 }
 
 @keyframes fadeIn {
